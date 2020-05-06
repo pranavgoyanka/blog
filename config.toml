@@ -8,28 +8,28 @@ disqusShortname = ""
 googleAnalytics = ""
 
 [author]
-  name = "Dmitry Kolosov"
+  name = "Pranav Goyanka"
 
 [params]
-   author = "Dmitry Kolosov"
-   description = "Anubis is a simple minimalist theme for Hugo blog engine."
+   author = "Pranav Goyanka"
+   # description = "Anubis is a simple minimalist theme for Hugo blog engine."
 
 [menu]
 
   [[menu.main]]
     identifier = "about"
-    name = "About"
+    name = "about"
     url = "/about/"
     weight = 1
 
   [[menu.main]]
     identifier = "tags"
-    name = "Tags"
+    name = "tags"
     url = "/tags/"
     weight = 2
 
   [[menu.main]]
-    name = "Archive"
+    name = "blog"
     identifier = "archive"
     url = "/posts/"
     weight = 3

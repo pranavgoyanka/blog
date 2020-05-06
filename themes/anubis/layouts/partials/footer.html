@@ -1,5 +1,5 @@
 <center>
-<p>© {{ if isset .Site.Params "author"}}{{ .Site.Params.author }}, {{end}}{{ now.Year }}<br>
+<p>
 
     {{ with .Site.Data.Socials }}
     <ul class="socials">
@@ -13,6 +13,6 @@
         {{- end -}}
     </ul>
 {{ end }}
-{{ i18n "powered" | humanize }} <a target="_blank" href="https://gohugo.io/">Hugo</a>, {{ i18n "theme" }} <a target="_blank" href="https://github.com/mitrichius/hugo-theme-anubis">Anubis</a>.
+© {{ if isset .Site.Params "author"}}{{ .Site.Params.author }}, {{end}}{{ now.Year }}
 </p>
 </center>
