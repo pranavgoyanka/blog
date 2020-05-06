@@ -4,6 +4,8 @@ title = "comlag"
 theme = "anubis"
 paginate = 3
 
+enableRobotsTXT = true
+
 disqusShortname = ""
 googleAnalytics = ""
 
@@ -12,7 +14,7 @@ googleAnalytics = ""
 
 [params]
    author = "Pranav Goyanka"
-   # description = "Anubis is a simple minimalist theme for Hugo blog engine."
+   description = "Pranav Goyanka's home on the Interwebs"
 
 [menu]
 
