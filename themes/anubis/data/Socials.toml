@@ -7,7 +7,7 @@
 
 [[socials]]
     id = "rss"
-    url = "/rss.xml"
+    url = "index.xml"
     icon = "rss"
     title = "RSS"
     weight = 1
