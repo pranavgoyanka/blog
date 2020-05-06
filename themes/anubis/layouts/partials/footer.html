@@ -1,0 +1,16 @@
+<p>© {{ if isset .Site.Params "author"}}{{ .Site.Params.author }}, {{end}}{{ now.Year }}<br>
+
+    {{ with .Site.Data.Socials }}
+    <ul class="socials">
+        {{- range sort .socials "weight" -}}
+            <li class="socials-item">
+                <a href="{{ .url }}" target="_blank" rel="external noopener" title="{{ .title }}">
+                    <!-- {{ .title}} -->
+                    {{- replace (index $.Site.Data.SVG .icon) "icon" "icon social-icon" | safeHTML -}}
+                </a>
+            </li>
+        {{- end -}}
+    </ul>
+{{ end }}
+{{ i18n "powered" | humanize }} <a target="_blank" href="https://gohugo.io/">Hugo</a>, {{ i18n "theme" }} <a target="_blank" href="https://github.com/mitrichius/hugo-theme-anubis">Anubis</a>.
+</p>
