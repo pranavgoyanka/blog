@@ -5,13 +5,9 @@
 
 
 .hr-top {
-  /* height: 4px; !important */
   margin: 0px;
   height: 6px;
-  /* background: linear-gradient(to right, #cc8b79ff, #faae7bff, #faae7bff, #cc8b79ff ); */
-  background: blue !important!
-  border: 0px;
-  /* border-top: 6px solid #ffa69e; */
+  background: #8D6890 !important;
 }
 
 html, body, body>div {
@@ -46,13 +42,13 @@ body a, body a:link, body a *:not(img), body a:link *:not(img) {
   background-color: rgba(60, 60, 60, 0) !important;
 }
 
-body a:hover, body a:active, body a:hover *:not(img), body a:active *:not(img) {
+body a:hover, body a:active, body a:hover *:not(img), body a:active *:not(img),body a:visited, body a:visited *:not(img)  {
   color: #40e0ff !important;
   background-image: none !important;
   background-color: rgba(60, 60, 60, 0) !important;
 }
 
-body a:visited, body a:visited *:not(img) {
+body a:hover, body a:active, body a:hover *:not(img){
   color: #9182ff !important;
   background-image: none !important;
   background-color: rgba(60, 60, 60, 0) !important;

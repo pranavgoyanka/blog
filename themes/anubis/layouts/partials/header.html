@@ -7,6 +7,6 @@
     <a class="{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{end}}" href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
     {{ end }}
     <!-- DARK MODE STUFF -->
-    <span style="padding-left: 1.3em;" id="dark-mode-toggle" class="light"><nobr> 🌓</nobr></span>
+    <span style="padding-left: 1.3em; cursor: pointer;" id="dark-mode-toggle" class="light">🌘</span>
     <!-- <a id="dark-mode-toggle" class="fal fa-moon-o" >Toggle Dark Mode</a> -->
 </nav>
