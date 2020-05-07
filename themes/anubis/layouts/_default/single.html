@@ -4,10 +4,11 @@
         <header>
             <h1>{{ .Title }}</h1>
         </header>
+        {{ partial "articleInfoFull.html" . }}
         <div class="content">
             {{ .Content }}
         </div>
-        {{ partial "articleInfoFull.html" . }}
+        <!-- {{ partial "articleInfoFull.html" . }} -->
     </article>
     {{ if .Site.DisqusShortname }}
         {{ template "_internal/disqus.html" . }}
