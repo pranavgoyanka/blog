@@ -1,0 +1,66 @@
+
+* {
+  border-color: #252525 !important
+}
+
+
+.hr-top {
+  /* height: 4px; !important */
+  margin: 0px;
+  height: 6px;
+  /* background: linear-gradient(to right, #cc8b79ff, #faae7bff, #faae7bff, #cc8b79ff ); */
+  background: blue !important!
+  border: 0px;
+  /* border-top: 6px solid #ffa69e; */
+}
+
+html, body, body>div {
+  background-color: #222 !important
+}
+
+div[style*="transparent"] *:not(img) {
+  opacity: 0 !important
+}
+
+@-moz-document url(about:blank) {
+  html {
+    background-color: #222
+  }
+}
+
+browser[type="content-primary"] {
+  background-color: #222 !important
+}
+
+body *:not([background]):not(input) {
+  background-color: #222 !important
+}
+
+body * {
+  text-shadow: none !important;
+  color: rgba(255, 255, 255, 1) !important;
+}
+
+body a, body a:link, body a *:not(img), body a:link *:not(img) {
+  color: #30C5FF !important;
+  background-color: rgba(60, 60, 60, 0) !important;
+}
+
+body a:hover, body a:active, body a:hover *:not(img), body a:active *:not(img) {
+  color: #40e0ff !important;
+  background-image: none !important;
+  background-color: rgba(60, 60, 60, 0) !important;
+}
+
+body a:visited, body a:visited *:not(img) {
+  color: #9182ff !important;
+  background-image: none !important;
+  background-color: rgba(60, 60, 60, 0) !important;
+}
+
+body input, body textarea {
+  color: #f0f0f0 !important;
+  border-color: #333 !important;
+  background-image: none !important;
+  background-color: #222 !important;
+}

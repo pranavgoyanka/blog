@@ -14,7 +14,11 @@
 <link rel="icon" type="image/x-icon" href="{{ "favicon.ico" | absURL }}">
 <link rel="apple-touch-icon-precomposed" href="{{ "favicon.png" | absURL }}">
 
-<link rel="stylesheet" href="{{ "css/style.css" | absURL }}?rnd={{ now.Unix }}" />
+<!-- <script href="{{ "js/darkmode.js" | absURL }}?rnd={{ now.Unix }}" /></script> -->
+
+<link disabled id="dark-mode-theme" rel="stylesheet" href="{{ "css/darkstyle.css" | absURL }}?rnd={{ now.Unix }}" />
+<link rel="stylesheet" id="LTT" href="{{ "css/style.css" | absURL }}?rnd={{ now.Unix }}" />
+
 
 {{ range .Site.Params.customCSS -}}
 <link rel="stylesheet" href="{{ . | absURL }}?rnd={{ now.Unix }}">
