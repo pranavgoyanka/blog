@@ -1,9 +1,8 @@
-            
-    var toggle = document.getElementById("dark-mode-toggle");
+var toggle = document.getElementById("dark-mode-toggle");
     var darkTheme = document.getElementById("dark-mode-theme");
 
     toggle.addEventListener("click", () => {
-        // console.log(toggle.className)
+        console.log(toggle.className)
         if (toggle.className === "light") {
             setTheme("dark");
         } else if (toggle.className === "dark") {
@@ -12,14 +11,25 @@
     });
 
     function setTheme(mode) {
+        localStorage.setItem("dark-mode-storage", mode);
         if (mode === "dark") {
-            // console.log(mode);
+            console.log(mode);
             darkTheme.disabled = false;
-            // document.styleSheets[1].disabled = false
             toggle.className = "dark";
+            toggle.innerHTML = "🌖"
         } else if (mode === "light") {
             darkTheme.disabled = true;
-            // document.styleSheets[1].disabled = true;
             toggle.className = "light";
+            toggle.innerHTML = "🌘"
         }
     }
+
+
+    var savedTheme = localStorage.getItem("dark-mode-storage") || "light";
+setTheme(savedTheme);
+
+// function setTheme(mode) {
+//     localStorage.setItem("dark-mode-storage", mode);
+
+//     // same as above
+// }
