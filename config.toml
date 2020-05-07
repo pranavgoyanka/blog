@@ -38,7 +38,7 @@ googleAnalytics = ""
 
   [[menu.main]]
     name = "categories"
-    identifier = "categories"
+    identifier = "category"
     url = "/categories/"
     weight = 2
 
