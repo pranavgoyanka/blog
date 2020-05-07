@@ -24,17 +24,23 @@ googleAnalytics = ""
     url = "/about/"
     weight = 3
 
-  [[menu.main]]
-    identifier = "tags"
-    name = "tags"
-    url = "/tags/"
-    weight = 2
+#  [[menu.main]]
+#    identifier = "tags"
+#    name = "tags"
+#    url = "/tags/"
+#    weight = 2
 
   [[menu.main]]
     name = "blog"
     identifier = "archive"
     url = "/posts/"
     weight = 1
+
+  [[menu.main]]
+    name = "categories"
+    identifier = "categories"
+    url = "/categories/"
+    weight = 2
 
 [taxonomies]
 category = "categories"

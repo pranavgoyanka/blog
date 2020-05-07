@@ -7,9 +7,12 @@
 .hr-top {
   margin: 0px;
   height: 6px;
-  background: #8D6890 !important;
+  background: #79d2f5 !important;
 }
 
+hr{
+  border-top: 1px solid #a9a9a9 !important;
+}
 html, body, body>div {
   background-color: #222 !important
 }
@@ -28,7 +31,7 @@ browser[type="content-primary"] {
   background-color: #222 !important
 }
 
-body *:not([background]):not(input) {
+body *:not([background]):not(input):not(hr) {
   background-color: #222 !important
 }
 
