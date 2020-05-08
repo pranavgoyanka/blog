@@ -4,7 +4,9 @@ date: 2020-05-07T18:33:19+05:30
 draft: false
 categories : [
 	"blog",
-
+]
+tags: [
+"pinned"
 ]
 ---
 
@@ -34,3 +36,4 @@ So I hope to see you sticking around!
 
 
 
+​	

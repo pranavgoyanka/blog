@@ -1,6 +1,7 @@
 {{ define "main" }}
     {{ $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
     {{ range (.Paginate $pages).Pages }}
+    {{if .Params.tags}}
     <article class="post-list">
         <header> 
             <h1>
@@ -20,6 +21,7 @@
         {{ partial "articleInfoFull.html" . }}
     </article>
     {{ end }}
+    {{end}}
     {{ partial "pagination.html" . }}
 
 {{ end }}
