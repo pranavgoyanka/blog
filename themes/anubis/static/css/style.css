@@ -352,6 +352,10 @@ article img {
     border-bottom: 0;
 }
 
+.pinned{
+    color: #714674;
+}
+
 /* Footer */
 
 footer {
