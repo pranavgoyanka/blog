@@ -1,48 +1,32 @@
-baseURL = "https://pranavgoyanka.netlify.app/"
-languageCode = "en-us"
-title = "pranav goyanka's webpage"
-theme = "anubis"
-paginate = 3
-
-enableRobotsTXT = true
-
+baseURL = "https://pranavgoyanka.me"
 disqusShortname = ""
+enableRobotsTXT = true
 googleAnalytics = ""
-
+languageCode = "en-us"
+paginate = 3
+theme = "anubis"
+title = "pranav goyanka's webpage"
 [author]
-  name = "Pranav Goyanka"
-
+name = "Pranav Goyanka"
+[[menu.main]]
+identifier = "about"
+name = "about"
+url = "/about/"
+weight = 3
+[[menu.main]]
+identifier = "archive"
+name = "blog"
+url = "/posts/"
+weight = 1
+[[menu.main]]
+identifier = "category"
+name = "categories"
+url = "/categories/"
+weight = 2
 [params]
-   author = "Pranav Goyanka"
-   description = "Pranav Goyanka's home on the Interwebs"
-
-[menu]
-
-  [[menu.main]]
-    identifier = "about"
-    name = "about"
-    url = "/about/"
-    weight = 3
-
-#  [[menu.main]]
-#    identifier = "tags"
-#    name = "tags"
-#    url = "/tags/"
-#    weight = 2
-
-  [[menu.main]]
-    name = "blog"
-    identifier = "archive"
-    url = "/posts/"
-    weight = 1
-
-  [[menu.main]]
-    name = "categories"
-    identifier = "category"
-    url = "/categories/"
-    weight = 2
-
+author = "Pranav Goyanka"
+description = "Pranav Goyanka's home on the Interwebs"
 [taxonomies]
 category = "categories"
-tag = "tags"
 series = "series"
+tag = "tags"
