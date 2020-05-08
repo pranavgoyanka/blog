@@ -1,4 +1,4 @@
-baseURL = "pranavgoyanka.netlify.app"
+baseURL = "/"
 disqusShortname = ""
 enableRobotsTXT = true
 googleAnalytics = ""
