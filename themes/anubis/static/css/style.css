@@ -45,15 +45,15 @@ main {
 
 /* Headers */
 h1 {
-    font-size: 1.35em;
+    font-size: 1.45em;
 }
 
 h2 {
-    font-size: 1.2em;
+    font-size: 1.25em;
 }
 
 h3 {
-    font-size: 1.1em;
+    font-size: 1.0em;
 }
 
 /* Links */
@@ -233,7 +233,7 @@ article:not(:last-of-type) {
 }
 
 article header h1 {
-    font-size: 1.35em;
+    font-size: 1.75em;
     line-height: 1.1em;
     margin-bottom: 0.5em;
     font-weight: 600;
