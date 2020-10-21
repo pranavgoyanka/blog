@@ -35,7 +35,7 @@ The OxygenOS sources didn't seem to have a ```defconfig``` file needed to build 
 
 On looking up for updated guides, I found Nathan Chance's [Compiling an Android kernel with Clang](https://github.com/nathanchance/android-kernel-clang). I think it is the best guide on how to build kernels for Android. I also learnt that Google now builds the Android kernel with Clang and that gcc is deprecated. I used [proton-clang](https://github.com/kdrag0n/proton-clang.git). It's a good set of prebuilt binaries needed for building the kernel. 
 
-Also, since the OxygenOS sources seemed to have problems, I switched over to [Paranoid Android](aospa.co)'s sources for my device. These were updated quite recently, so I was positive that they would work.
+Also, since the OxygenOS sources seemed to have problems, I switched over to [Paranoid Android](https://aospa.co)'s sources for my device. These were updated quite recently, so I was positive that they would work.
 
 ## Don't Panic 
 
