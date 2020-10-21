@@ -10,6 +10,8 @@
   background: #79d2f5 !important;
 }
 
+
+
 hr{
   border-top: 1px solid #a9a9a9 !important;
 }
@@ -62,4 +64,8 @@ body input, body textarea {
   border-color: #333 !important;
   background-image: none !important;
   background-color: #222 !important;
+}
+
+code{
+  background: #aaa !important;
 }

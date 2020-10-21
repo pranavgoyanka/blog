@@ -59,7 +59,7 @@ h3 {
 /* Links */
 
 a {
-    color: #1d60a3;
+    color: #1d60ff;
     text-decoration: none;
 }
 
@@ -138,6 +138,9 @@ kbd {
     line-height: 154%;
 }
 
+code{
+    background-color: #cccccc !important; 
+}
 /* Styles */
 
 blockquote {
