@@ -3,7 +3,6 @@ title: Building Kernels in WSL
 date: '2020-10-22T00:03:19.000+05:30'
 draft: false
 categories:
-- blog
 - dev
 tags:
 - pinned
