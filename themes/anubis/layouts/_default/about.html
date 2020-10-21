@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+<head>
+    {{ block "head" . }}
+        {{ partial "head.html" . }}
+    {{ end }}
+</head>
+<body>
+    <a class="skip-main" href="#main">{{ i18n "skipToContent" | humanize }}</a>
+    <hr class="hr-top">
+    <div class="container">
+        
+        <header> 
+            {{ block "header" . }}
+                {{ partial "header.html" . }}
+            {{ end }}
+        </header>
+        <main id="main" tabindex="-1"> 
+            {{ block "main" . }}
+            
+            {{ end }}
+        </main>
+        <footer>
+            {{ block "footer" . }}
+                {{ partial "footer.html" . }}
+            {{ end }}
+        </footer>
+    </div>
+</body>
+</html>
+
+
+{{ define "main" }}
+
+    <article class="post">
+        <header>
+            <h1>{{ .Title }}</h1>
+        </header>
+        {{ partial "articleInfoFull.html" . }}
+        <img src="/aboutpg.jpg"  title="me" style="width: 10em;"> 
+
+        <div class="content">
+            {{ .Content }}
+        </div>
+        <!-- {{ partial "articleInfoFull.html" . }} -->
+    </article>
+    {{ if .Site.DisqusShortname }}
+        {{ template "_internal/disqus.html" . }}
+    {{ end }}
+
+{{ end }}

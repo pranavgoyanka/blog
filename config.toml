@@ -1,4 +1,5 @@
-baseURL = "https://old.pranavgoyanka.me/"
+# baseURL = "https://old.pranavgoyanka.me/"
+baseURL = "https://pranavgoyanka.me/"
 disqusShortname = ""
 enableRobotsTXT = true
 googleAnalytics = ""
@@ -9,11 +10,11 @@ title = "pranav goyanka's webpage"
 date = true
 [author]
 name = "Pranav Goyanka"
-[[menu.main]]
-identifier = "about"
-name = "about"
-url = "/about/"
-weight = 3
+# [[menu.main]]
+# identifier = "about"
+# name = "about"
+# url = "/about/"
+# weight = 3
 [[menu.main]]
 identifier = "archive"
 name = "blog"
@@ -24,6 +25,11 @@ identifier = "category"
 name = "categories"
 url = "/categories/"
 weight = 2
+[[menu.main]]
+identifier = "about"
+name = "about"
+url = "/about/"
+weight = 3
 [params]
 author = "Pranav Goyanka"
 description = "Pranav Goyanka's home on the Interwebs"

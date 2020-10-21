@@ -20,6 +20,8 @@
 <link disabled id="dark-mode-theme" rel="stylesheet" href="{{ "css/darkstyle.css" | absURL }}?rnd={{ now.Unix }}" />
 <link rel="stylesheet" id="LTT" href="{{ "css/style.css" | absURL }}?rnd={{ now.Unix }}" />
 
+<!-- Inter Font -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
 
 {{ range .Site.Params.customCSS -}}
 <link rel="stylesheet" href="{{ . | absURL }}?rnd={{ now.Unix }}">
