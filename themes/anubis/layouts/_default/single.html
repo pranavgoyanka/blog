@@ -7,7 +7,7 @@
         <div>
             {{ $title := lower .Title }}
             {{ $title := replace $title " " "-" }}
-            <applause-button color="purple" multiclap="true" url={{ (print "https://pranavgoyanka.me/post/" $title "/") }}  style="width: 58px; height: 58px; float: right;" />
+            <applause-button color="purple" url={{ (print "https://pranavgoyanka.me/post/" $title "/") }}  style="width: 58px; height: 58px; float: right;" />
         </div style="float:left">
             {{ partial "articleInfoFull.html" . }}
         <div class="content">
