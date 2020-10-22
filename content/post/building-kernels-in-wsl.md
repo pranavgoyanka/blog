@@ -23,7 +23,7 @@ If you want to build a kernel using WSL too, you are going to want to use WSL2 s
 
 Now this isn't my first time trying to build a kernel. I did attempt this back in 2018, but I wasn't as experienced with development and working around with already existing codebases. So, two years later, I decided to give it another shot.
 
-I have a OnePlus 5 as my daily driver. It's got great community support for custom ROMs and Kernels so I was the perfect phone to build kernels for. So I began by downloading the source code. I began with OnePlus' OxygenOS kernel sources for my device, the ```msm-8998```. 
+I have a OnePlus 5 as my daily driver. It's got great community support for custom ROMs and Kernels so it was the perfect phone to start building kernels for. So I began by downloading the source code. I began with OnePlus' OxygenOS kernel sources for my device, the ```msm-8998```. 
 
 A fun tip that I helps with the huge Git repo sizes: Shallow clone the repos. Since I was just building for the first time, I didn't really need all of the commit history. Of course, as a proper kernel dev / maintainer you'd probably want to clone it the normal way.
 
