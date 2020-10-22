@@ -1,11 +1,6 @@
 
-* {
+*:not(.applause-button) {
   border-color: #252525 !important
-}
-
-applause-button{
-  color: coral !important;
-  fill: coral !important;
 }
 
 .hr-top {
@@ -37,11 +32,11 @@ browser[type="content-primary"] {
   background-color: #222 !important
 }
 
-body *:not([background]):not(input):not(hr) {
+body *:not([background]):not(input):not(hr):not(svg) {
   background-color: #222 !important
 }
 
-body * {
+body * :not(.applause-button){
   text-shadow: none !important;
   color: rgba(255, 255, 255, 1) !important;
 }
@@ -63,7 +58,7 @@ body a:hover, body a:active, body a:hover *:not(img){
   background-color: rgba(60, 60, 60, 0) !important;
 }
 
-body input, body textarea {
+body input, body textarea{
   color: #f0f0f0 !important;
   border-color: #333 !important;
   background-image: none !important;
@@ -74,3 +69,11 @@ code{
   background: #aaa !important;
 }
 
+/* .applause-button {
+  color: #30C5FF !important;
+} */
+
+svg {
+  fill: #fff !important;
+  color: #fff !important;
+}
