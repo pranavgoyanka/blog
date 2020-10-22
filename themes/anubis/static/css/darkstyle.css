@@ -22,7 +22,7 @@ div[style*="transparent"] *:not(img) {
   opacity: 0 !important
 }
 
-@-moz-document url(about:blank) {
+@-moz-document url(about:blank)  {
   html {
     background-color: #222
   }
@@ -32,7 +32,7 @@ browser[type="content-primary"] {
   background-color: #222 !important
 }
 
-body *:not([background]):not(input):not(hr):not(svg) {
+body *:not([background]):not(input):not(hr):not(svg):not(nav):not(nav>a) {
   background-color: #222 !important
 }
 
@@ -58,7 +58,7 @@ body a:hover, body a:active, body a:hover *:not(img){
   background-color: rgba(60, 60, 60, 0) !important;
 }
 
-body input, body textarea{
+body input, body textarea :not(nav){
   color: #f0f0f0 !important;
   border-color: #333 !important;
   background-image: none !important;
@@ -76,4 +76,8 @@ code{
 svg {
   fill: #fff !important;
   color: #fff !important;
+}
+
+nav{
+  background: #272727 !important;
 }
