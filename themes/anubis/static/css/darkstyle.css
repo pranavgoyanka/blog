@@ -66,7 +66,8 @@ body input, body textarea :not(nav){
 }
 
 code{
-  background: #aaa !important;
+  /* background: #aaa !important; */
+  background-color: #0aa5c8 !important;
 }
 
 /* .applause-button {
