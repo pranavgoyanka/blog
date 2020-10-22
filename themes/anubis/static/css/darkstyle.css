@@ -78,6 +78,8 @@ svg {
   color: #fff !important;
 }
 
-nav{
-  background: #272727 !important;
+@media (max-width: 840px) {
+  nav{
+    background: #272727 !important;
+  }
 }
