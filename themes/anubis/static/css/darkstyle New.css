@@ -11,8 +11,8 @@ html {
 
 body {
     margin: 0;
-    background: #ffffff;
-    color: #333;
+    background: #222 !important ;
+    color: #eee !important;
     font-size: 18px;
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
@@ -59,7 +59,7 @@ h3 {
 /* Links */
 
 a {
-    color: #1d60ff;
+    color: #1d60ff !important;
     text-decoration: none;
 }
 
@@ -207,7 +207,7 @@ header nav a {
 }
 
 header a {
-    color: #333;
+    color: #eee !important;
 }
 
 .site-header {
@@ -245,7 +245,7 @@ article header h1 {
 article header h1 a {
     border: none;
     text-decoration: none;
-    color: #333;
+    color: #eee !important;
 }
 
 .article-info {
@@ -347,7 +347,7 @@ article img {
 }
 
 .pagination-item a {
-    color: #333333;
+    color: #eeeeee !important;
 }
 
 .pagination-item a:hover, .pagination-item   a:focus {

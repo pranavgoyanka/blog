@@ -3,6 +3,10 @@
   border-color: #252525 !important
 }
 
+applause-button{
+  color: coral !important;
+  fill: coral !important;
+}
 
 .hr-top {
   margin: 0px;
@@ -69,3 +73,4 @@ body input, body textarea {
 code{
   background: #aaa !important;
 }
+
