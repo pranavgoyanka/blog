@@ -5,7 +5,9 @@
             <h1>{{ .Title }}</h1>
         </header>
         <div>
-            <applause-button color="purple" style="width: 58px; height: 58px; float: right;"/>
+            {{ $title := .Title }}
+            {{ $Site := "pranavgoyanka.me/post/" }}
+            <applause-button color="purple" style="width: 58px; height: 58px; float: right;" url={{ (print "pranavgoyanka.me/post/" $title) }} />
         </div style="float:left">
             {{ partial "articleInfoFull.html" . }}
         <div class="content">
