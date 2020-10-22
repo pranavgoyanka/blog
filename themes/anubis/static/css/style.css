@@ -141,6 +141,7 @@ kbd {
 }
 
 code{
+    overflow-wrap: break-word;
     background-color: #cccccc; 
 }
 /* Styles */
