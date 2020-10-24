@@ -484,12 +484,15 @@ footer {
     fill: currentColor;
     display: inline-block;
 }
-/* 
-applause-button{
-    color: coral !important;
-    fill: coral;
-} */
         
 .copyright {
-    /* color: var(--darkBlue); */
+    color: var(--footer-hr);
+}
+
+.beta{
+    color: var(--pink); 
+    font-size: 0.8em;
+    :hover{
+        color: var(--font-color) !important;
+    }
 }

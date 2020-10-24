@@ -6,9 +6,10 @@
 <!-- <br> -->
 <center>
 <p style="margin: 2em;">
-
     {{ with .Site.Data.Socials }}
     <ul class="socials">
+        <a href="https://beta.pranavgoyanka.me" class="beta">View Beta Version</a>
+        <br>
         {{- range sort .socials "weight" -}}
             <li class="socials-item">
                 <a href="{{ .url }}" target="_blank" rel="external noopener" title="{{ .title }}">
@@ -20,8 +21,6 @@
     </ul>
 {{ end }}
 <div class="copyright">
-    <a href="https://beta.pranavgoyanka.me" style="color: var(--footer-hr);">View Beta Version</a>
-    <br>
     © {{ if isset .Site.Params "author"}}{{ .Site.Params.author }}, {{end}}{{ now.Year }}
 </div>
 </p>
@@ -29,7 +28,7 @@
 
 <script>
     var toggle = document.getElementById("dark-mode-toggle");
-    var darkTheme = document.getElementById("dark-mode-theme");
+    // var darkTheme = document.getElementById("dark-mode-theme");
 
     toggle.addEventListener("click", () => {
         console.log(toggle.className)
