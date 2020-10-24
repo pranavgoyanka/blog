@@ -1,4 +1,4 @@
-baseURL = "https://blog.pranavgoyanka.me/"
+baseURL = "https://beta.pranavgoyanka.me/"
 # baseURL = "https://pranavgoyanka.me/"
 disqusShortname = ""
 enableRobotsTXT = true
