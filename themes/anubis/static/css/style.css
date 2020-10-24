@@ -28,6 +28,7 @@ html {
     --pink: #EA526F;
     --font-color: #333333;
     --code-color: #333333;
+    --footer-hr: #b0b0b0;
 }
 
 
@@ -397,7 +398,7 @@ article img {
 /* Footer */
 
 footer {
-    border-top: thin solid #f1f1f1;
+    border-top: thin solid var(--footer-hr);
     margin-top: 3em;
     font-size: 16px;
 }

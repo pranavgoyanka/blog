@@ -1,6 +1,6 @@
 <div style="float: right;">
     <a href="#">
-        <i class="fas fa-chevron-circle-up icon fa-lg" style="margin-top: 0.5em; color: var(--turquiseDark);" ></i>
+        <i class="fas fa-chevron-circle-up icon fa-lg" style="margin-top: 0.5em; color: var(--footer-hr);" ></i>
     </a>
 </div>
 <!-- <br> -->
@@ -20,6 +20,8 @@
     </ul>
 {{ end }}
 <div class="copyright">
+    <a href="https://beta.pranavgoyanka.me" style="color: var(--footer-hr);">View Beta Version</a>
+    <br>
     © {{ if isset .Site.Params "author"}}{{ .Site.Params.author }}, {{end}}{{ now.Year }}
 </div>
 </p>
@@ -52,7 +54,8 @@
                 --darkBlue: #478BC2;\
                 --pink: #EA526F;\
                 --navbar: #313131;\
-                --font-color: #F2EFEA\
+                --font-color: #F2EFEA;\
+                --footer-hr: #505050;\
                 ")
 
             toggle.className = "dark";
@@ -68,7 +71,9 @@
                 --pink: #EA526F;\
                 --navbar: #f5f5f5;\
                 --font-color: #333333\
-                --code-bg: #3ccdc6;")
+                --code-bg: #3ccdc6;\
+                --footer-hr: #b0b0b0;\
+                ")
 
             
             toggle.className = "light";
