@@ -1,5 +1,5 @@
-baseURL = "https://beta.pranavgoyanka.me/"
-# baseURL = "https://pranavgoyanka.me/"
+# baseURL = "https://old.pranavgoyanka.me/"
+baseURL = "https://pranavgoyanka.me/"
 disqusShortname = ""
 enableRobotsTXT = true
 googleAnalytics = ""
