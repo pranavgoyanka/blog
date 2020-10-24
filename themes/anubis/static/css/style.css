@@ -454,7 +454,7 @@ footer {
     list-style: none;
 }
 .socials-item > a{
-    color: var(--turquiseDark);
+    color: var(--font-color);
     padding: 0;
     margin: 0;
     list-style: none;
@@ -473,7 +473,7 @@ footer {
 }
 
 .social-icon {
-    fill: var(--color-bg);
+    fill: var(--font-color);
     padding: 0.5em;
 }
 
