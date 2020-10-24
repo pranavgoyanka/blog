@@ -1,6 +1,6 @@
 <div style="float: right;">
     <a href="#">
-        <i class="fas fa-chevron-circle-up icon fa-lg" style="margin-top: 0.5em" ></i>
+        <i class="fas fa-chevron-circle-up icon fa-lg" style="margin-top: 0.5em; color: var(--turquiseDark);" ></i>
     </a>
 </div>
 <!-- <br> -->
@@ -19,7 +19,9 @@
         {{- end -}}
     </ul>
 {{ end }}
-© {{ if isset .Site.Params "author"}}{{ .Site.Params.author }}, {{end}}{{ now.Year }}
+<div class="copyright">
+    © {{ if isset .Site.Params "author"}}{{ .Site.Params.author }}, {{end}}{{ now.Year }}
+</div>
 </p>
 </center>
 
