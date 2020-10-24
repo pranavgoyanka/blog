@@ -42,11 +42,35 @@
         localStorage.setItem("dark-mode-storage", mode);
         if (mode === "dark") {
             console.log(mode);
-            darkTheme.disabled = false;
+            // darkTheme.disabled = false;
+            document.documentElement.setAttribute("style", "--orange: #FC7753; \
+                --turquise: #66D7D1;\
+                --turquiseDark: #3CCDC6;\
+                --purple: #7880B5;\
+                --white: #444;\
+                --snow: #121212;\
+                --darkBlue: #478BC2;\
+                --pink: #EA526F;\
+                --navbar: #313131;\
+                --font-color: #F2EFEA\
+                ")
+
             toggle.className = "dark";
             toggle.innerHTML = "🌖"
         } else if (mode === "light") {
-            darkTheme.disabled = true;
+            document.documentElement.setAttribute("style", "--orange: #FC7753;\
+                --turquise: #66D7D1;\
+                --turquiseDark: #3CCDC6;\
+                --purple: #7880B5;\
+                --white: #F2EFEA;\
+                --snow: #FFFCFF;\
+                --darkBlue: #254E70;\
+                --pink: #EA526F;\
+                --navbar: #f5f5f5;\
+                --font-color: #333333\
+                --code-bg: #3ccdc6;")
+
+            
             toggle.className = "light";
             toggle.innerHTML = "🌘"
         }
@@ -55,6 +79,35 @@
 
     var savedTheme = localStorage.getItem("dark-mode-storage") || "light";
 setTheme(savedTheme);
+//     var toggle = document.getElementById("dark-mode-toggle");
+//     var darkTheme = document.getElementById("dark-mode-theme");
+
+//     toggle.addEventListener("click", () => {
+//         console.log(toggle.className)
+//         if (toggle.className === "light") {
+//             setTheme("dark");
+//         } else if (toggle.className === "dark") {
+//             setTheme("light");
+//         }
+//     });
+
+//     function setTheme(mode) {
+//         localStorage.setItem("dark-mode-storage", mode);
+//         if (mode === "dark") {
+//             console.log(mode);
+//             darkTheme.disabled = false;
+//             toggle.className = "dark";
+//             toggle.innerHTML = "🌖"
+//         } else if (mode === "light") {
+//             darkTheme.disabled = true;
+//             toggle.className = "light";
+//             toggle.innerHTML = "🌘"
+//         }
+//     }
+
+
+//     var savedTheme = localStorage.getItem("dark-mode-storage") || "light";
+// setTheme(savedTheme);
 
 // function setTheme(mode) {
 //     localStorage.setItem("dark-mode-storage", mode);
