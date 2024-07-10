@@ -26,6 +26,11 @@ name = "work"
 url = "/work/"
 weight = 2
 [[menu.main]]
+identifier = "resume"
+name = "resume"
+url = "/resume/"
+weight = 3
+[[menu.main]]
 identifier = "category"
 name = "categories"
 url = "/categories/"

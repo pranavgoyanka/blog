@@ -3,6 +3,6 @@ title: "Pranav Goyanka's homepage on the Internet"
 layout: about
 ---
 
-Hey there! 
+Hey there!
 
-This is Pranav Goyanka's webpage. Here, you'll find me writing about me tinkering with random stuff, showcasing my work and occasionally posting some music.
+I am a graduate student pursuing a Master of Science in Computer Science degree at Boston University's Graduate School of Arts and Sciences. I will graduate in December 2024 and
