@@ -3,5 +3,5 @@ title: "Pranav Goyanka's Resume"
 layout: about
 ---
 
-{{< googlePdf "1-1yydDntcMTfYNoUlboA-mCKUKxenVcA" "" >}}
+{{< googlePdf "1CZFSqRteZPWk8e4jWcUXECU3jrWQVoUS" "" >}}
 
