@@ -27,8 +27,15 @@
     weight = 3
 
 [[socials]]
-    id = "twitter"
-    url = "https://twitter.com/hydratedcomlag"
+    id = "x"
+    url = "https://x.com/hydratedcomlag"
     icon = "twitter"
-    title = "Twitter"
+    title = "X"
     weight = 4
+
+[[socials]]
+    id = "linkedin"
+    url = "https://www.linkedin.com/in/pranavgoyanka/"
+    icon = "linkedin"
+    title = "Linkedin"
+    weight = 5
