@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Viewer</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        #pdfViewer {
+            width: 100%;
+            height: 100%;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            /* margin-top: 20px; */
+        }
+    </style>
+</head>
+<body>
+    <iframe id="pdfViewer"></iframe>
+
+    <script>
+        async function getPDFUrl() {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get('url');
+        }
+
+        function extractFilename(url) {
+            return url.split('/').pop().split('#')[0].split('?')[0];
+        }
+
+        async function loadPDF() {
+            const url = await getPDFUrl();
+            if (url) {
+                try {
+                    const response = await fetch(url);
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok ' + response.statusText);
+                    }
+                    const arrayBuffer = await response.arrayBuffer();
+                    const blob = new Blob([arrayBuffer], { type: 'application/pdf' });
+                    const objectUrl = URL.createObjectURL(blob);
+                    document.getElementById('pdfViewer').src = objectUrl;
+                    document.title = extractFilename(response.url);
+                } catch (error) {
+                    alert('Failed to download PDF: ' + error.message);
+                }
+            } else {
+                alert('No PDF URL provided in the URL parameters.');
+            }
+        }
+
+        // Load the PDF when the page loads
+        window.onload = loadPDF;
+    </script>
+</body>
+</html>

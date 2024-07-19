@@ -28,8 +28,8 @@ weight = 1
 [[menu.main]]
 identifier = "resume"
 name = "resume"
-# url = "/resume"
-url = "/resumes/sde.html"
+url = "/resume"
+# url = "/resumes/sde.html"
 weight = 3
 [[menu.main]]
 identifier = "contact"
