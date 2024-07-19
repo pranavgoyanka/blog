@@ -1,64 +1,62 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PDF Viewer</title>
+<html>
+  <head>
+    <title> </title>
+
     <style>
-        body {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f0f0f0;
-        }
-        #pdfViewer {
-            width: 100%;
-            height: 100%;
-            border: 1px solid #ccc;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            /* margin-top: 20px; */
-        }
+      #the-canvas {
+        border: 1px solid black;
+        direction: ltr;
+      }
     </style>
-</head>
-<body>
-    <iframe id="pdfViewer"></iframe>
+  </head>
+  <body>
+    <script src="./build/pdf.mjs" type="module"></script>
+    <script type="module">
+      // If absolute URL from the remote server is provided, configure the CORS
+      // header on that server.
 
-    <script>
-        async function getPDFUrl() {
-            const urlParams = new URLSearchParams(window.location.search);
-            return urlParams.get('url');
-        }
+      const urlParams = new URLSearchParams(window.location.search);
+      const pdfUrl = urlParams.get("pdf");
 
-        function extractFilename(url) {
-            return url.split('/').pop().split('#')[0].split('?')[0];
-        }
+      // Loaded via <script> tag, create shortcut to access PDF.js exports.
+      var { pdfjsLib } = globalThis;
 
-        async function loadPDF() {
-            const url = await getPDFUrl();
-            if (url) {
-                try {
-                    const response = await fetch(url);
-                    if (!response.ok) {
-                        throw new Error('Network response was not ok ' + response.statusText);
-                    }
-                    const arrayBuffer = await response.arrayBuffer();
-                    const blob = new Blob([arrayBuffer], { type: 'application/pdf' });
-                    const objectUrl = URL.createObjectURL(blob);
-                    document.getElementById('pdfViewer').src = objectUrl;
-                    document.title = extractFilename(response.url);
-                } catch (error) {
-                    alert('Failed to download PDF: ' + error.message);
-                }
-            } else {
-                alert('No PDF URL provided in the URL parameters.');
-            }
-        }
+      // The workerSrc property shall be specified.
+      pdfjsLib.GlobalWorkerOptions.workerSrc = "./build/pdf.worker.mjs";
 
-        // Load the PDF when the page loads
-        window.onload = loadPDF;
+      // Asynchronous download of PDF
+      var loadingTask = pdfjsLib.getDocument(pdfUrl);
+
+      loadingTask.promise.then(function (pdf) {
+        // you can now use *pdf* here
+        pdf.getPage(1).then(function (page) {
+          // you can now use *page* here
+          var scale = 1.5;
+          var viewport = page.getViewport({ scale: scale });
+          // Support HiDPI-screens.
+          var outputScale = window.devicePixelRatio || 1;
+
+          var canvas = document.getElementById("the-canvas");
+          var context = canvas.getContext("2d");
+
+          canvas.width = Math.floor(viewport.width * outputScale);
+          canvas.height = Math.floor(viewport.height * outputScale);
+          canvas.style.width = Math.floor(viewport.width) + "px";
+          canvas.style.height = Math.floor(viewport.height) + "px";
+
+          var transform =
+            outputScale !== 1 ? [outputScale, 0, 0, outputScale, 0, 0] : null;
+
+          var renderContext = {
+            canvasContext: context,
+            transform: transform,
+            viewport: viewport,
+          };
+          page.render(renderContext);
+        });
+      });
     </script>
-</body>
+
+    <canvas id="the-canvas"></canvas>
+  </body>
 </html>
