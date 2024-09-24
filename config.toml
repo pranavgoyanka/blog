@@ -2,7 +2,6 @@
 baseURL = "https://pranavgoyanka.me/"
 disqusShortname = ""
 enableRobotsTXT = true
-googleAnalytics = ""
 languageCode = "en-us"
 paginate = 3
 theme = "anubis"
